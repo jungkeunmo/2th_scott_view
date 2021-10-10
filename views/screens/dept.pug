@@ -1,0 +1,20 @@
+extends ../layout/base.pug
+
+block content  
+    section.deptSection 
+        form.deptSearch(action="/dept", method="GET")
+            select(name="sDept")
+                option(value="") ALL
+                option(value="10") 10   
+                option(value="20") 20
+                option(value="30") 30
+            button SEARCH       
+        ul.deptHeader 
+            li 부서번호
+            li 부서이름
+            li 근무지
+        each row in rows    
+            ul.deptBody 
+                li #{row.DEPTNO}
+                li #{row.DNAME}
+                li #{row.LOC}

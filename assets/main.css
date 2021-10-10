@@ -1,0 +1,28 @@
+.mainSection {
+  width: 100%;
+  height: calc(100vh - 40px);
+  padding: 20px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.linkBtn {
+  border: 1px solid skyblue;
+  outline: none;
+  background: none;
+
+  width: 240px;
+  height: 35px;
+
+  color: darkblue;
+  border-radius: 4px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.linkBtn:hover {
+  box-shadow: 0px 0px 5px #999;
+}
